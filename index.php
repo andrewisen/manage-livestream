@@ -23,10 +23,11 @@ header("Pragma: no-cache");
 
 			$IP = fopen("text.txt", "r");
 			$IPaddr = fgets($IP);
+			$IPaddrXSS = htmlspecialchars($IPaddr, ENT_QUOTES);
 
 			// Read line from the text file and write the contents to the client
-			echo $msgA.$IPaddr."<br>";
-			echo $msgB.$IPaddr.$msgC;
+			echo $msgA.$IPaddrXSS."<br>";
+			echo $msgB.$IPaddrXSS.$msgC;
 
 			fclose($IP);
 
