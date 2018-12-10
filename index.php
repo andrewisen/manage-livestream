@@ -30,7 +30,6 @@ header("Pragma: no-cache");
 			echo $msgB.$IPaddrXSS.$msgC;
 
 			fclose($IP);
-
 		?>
 
 		<br>
@@ -41,7 +40,7 @@ header("Pragma: no-cache");
 		<input type="submit"value="Uppdatera IP">
 		</form>-->
 
-		<form action="/getIP.php" method="post">
+		<form action="./getIP.php" method="post">
 		Nytt IP: <input type="text" name="code" placeholder="192.168.0.1"> <input type="submit" value="Submit">
 		</form>
 

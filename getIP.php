@@ -1,6 +1,7 @@
 <?php
 // strip slashes before putting the form data into target file
 $cd = stripslashes($_POST['code']);
+header('Location:index.php');
 
 // Show the msg, if the code string is empty
 if (empty($cd))
@@ -17,7 +18,7 @@ else
     fclose($file);
 }
 
-header('Location:index.php');
+
 
 
 ?>
