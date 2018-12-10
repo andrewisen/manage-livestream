@@ -25,7 +25,7 @@
 
 			// The IP Address is located (in plain text) in the file "ip.txt"
 
-			$IP = fopen("text.txt", "r");
+			$IP = fopen("ip.txt", "r");
 			$IPaddr = fgets($IP);
 			$IPaddrXSS = htmlspecialchars($IPaddr, ENT_QUOTES);
 
