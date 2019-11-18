@@ -9,7 +9,7 @@
 	// if the code string is not empty then open the target file and put form data in it
 	else
 	{
-	    $file = fopen("text.txt", "w");
+	    $file = fopen("ip.txt", "w");
 	    echo fwrite($file, $cd);
 
 	    // show a success msg 
