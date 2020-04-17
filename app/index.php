@@ -19,8 +19,8 @@
 			// Message B, and Message C concatenates into the full URL
 			// E.g. Stream: rtmp://192.168.0.1/live/test
 
-			$msgA = "IP: ";
-			$msgB = "Stream: rtmp://";
+			$msgA = "<b>IP:</b> ";
+			$msgB = "<b>Stream:</b> rtmp://";
 			$msgC = "/live/test";
 
 			// The IP Address is located (in plain text) in the file "ip.txt"
@@ -40,7 +40,7 @@
 		<br>
 
 		<form action="./getIP.php" method="post">
-		Nytt IP: <input type="text" name="code" placeholder="192.168.0.1"> <input type="submit" value="Submit">
+		<b>Set new IP:</b> <input type="text" name="code" placeholder="192.168.0.1"> <input type="submit" value="Submit">
 		</form>
 
 	</body>
